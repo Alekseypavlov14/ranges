@@ -169,6 +169,13 @@ const range2 = new Range({ min: 2, max: 8 });
 console.log(range1.containsRange(range2.getValues())); // Output: true
 ```
 
+### Checking if a Range Contains Value
+
+```typescript
+const range = new Range({ min: 1, max: 10 });
+console.log(range.containsValue(3)); // Output: true
+```
+
 ### Mapping a Single Value to a Range
 
 ```typescript

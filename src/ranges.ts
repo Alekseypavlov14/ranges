@@ -54,6 +54,10 @@ export class Range {
   containsRange(rangeValues: RangeValues): boolean {
     return this.rangeValues.min <= rangeValues.min && this.rangeValues.max >= rangeValues.max
   }
+
+  containsValue(value: number): boolean {
+    return this.rangeValues.min <= value && this.rangeValues.max >= value
+  }
 }
 
 export function mapValueToRange(value: number): RangeValues {

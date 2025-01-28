@@ -85,3 +85,12 @@ test('containsRange should check if current range contains another range', () =>
   expect(range.containsRange({ min: 0, max: 5 })).toBe(false);
   expect(range.containsRange({ min: 5, max: 15 })).toBe(false);
 });
+
+// Test for containsValue method
+test('containsValue should check if current range contains value', () => {
+  expect(range.containsValue(2)).toBe(true);
+  expect(range.containsValue(3)).toBe(true);
+  expect(range.containsValue(11)).toBe(false);
+  expect(range.containsValue(12)).toBe(false);
+});
+
